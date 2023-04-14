@@ -59,6 +59,7 @@ export interface MySqlSelectConfig {
 		config: LockConfig;
 	};
 	distinct?: boolean;
+	against?: AnyMySqlTable | SQL;
 }
 
 export type JoinFn<
